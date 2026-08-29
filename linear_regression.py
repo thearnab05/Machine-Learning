@@ -40,3 +40,5 @@ if __name__ == "__main__":
     print(f"Learned parameters:")
     print(f"Weights: {model.weights[0]:.4f} (Expected: ~3.0)")
     print(f"Bias: {model.bias:.4f} (Expected: ~4.0)")
+
+#pending
