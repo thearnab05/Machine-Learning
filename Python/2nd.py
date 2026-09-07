@@ -17,3 +17,4 @@ model = DecisionTreeClassifier()
 model.fit(X, y)
 
 prediction = model.predict([[5, 72]])
+print("Prediction:", prediction[0])
