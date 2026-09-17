@@ -19,4 +19,3 @@ prediction = model.predict([[1600]])
 
 print("Predicted price:", prediction[0], "lakh")
 
-l,l,
