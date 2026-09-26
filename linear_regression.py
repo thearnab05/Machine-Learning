@@ -26,6 +26,13 @@ class LinearRegression:
     def predict(self, X):
         return np.dot(X, self.weights) + self.bias
 
+    def score(self, X, y):
+        """Calculate the coefficient of determination R^2."""
+        y_pred = self.predict(X)
+        u = ((y - y_pred) ** 2).sum()
+        v = ((y - y.mean()) ** 2).sum()
+        return 1 - u / v
+
 if __name__ == "__main__":
     # Generate random synthetic data
     np.random.seed(42)
@@ -40,4 +47,5 @@ if __name__ == "__main__":
     print(f"Learned parameters:")
     print(f"Weights: {model.weights[0]:.4f} (Expected: ~3.0)")
     print(f"Bias: {model.bias:.4f} (Expected: ~4.0)")
+    print(f"R-squared Score: {model.score(X, y):.4f}")
 
