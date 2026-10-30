@@ -33,6 +33,8 @@ class LinearRegression:
         v = ((y - y.mean()) ** 2).sum()
         return 1 - u / v
 
+\\
+
 if __name__ == "__main__":
     # Generate random synthetic data
     np.random.seed(42)
