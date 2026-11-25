@@ -51,4 +51,3 @@ if __name__ == "__main__":
     print(f"Bias: {model.bias:.4f} (Expected: ~4.0)")
     print(f"R-squared Score: {model.score(X, y):.4f}")
 
-jmnkmn
